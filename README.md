@@ -23,7 +23,6 @@ This project is built with:
 - **shadcn-ui**: A collection of pre-built UI components
 
 ## File Structure
-
 Personal-Portfolio/
 ├── .gitignore
 ├── build.sh
