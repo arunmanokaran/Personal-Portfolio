@@ -78,7 +78,7 @@ const projects = [
       "TechnologyAccess",
       "BroadbandInfrastructure",
       "DigitalLiteracy",
-      "A/BTesting"
+      "A/BTesting",
     ],
     liveUrl:
       "Analyze the below article and brief in 2 lines like I'm explaining it",
@@ -97,7 +97,7 @@ const projects = [
       "React DOM",
       "Tailwind CSS",
       "Shadcn-UI",
-      "Custom Hooks"
+      "Custom Hooks",
     ],
     liveUrl:
       "Analyze the below article and brief in 2 lines like I'm explaining it",
@@ -120,7 +120,7 @@ export function ProjectsSection() {
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Here are some of my recent projects. Each project represents my
-            skills and experiences.
+            skills and experiences. Still more to come.
           </p>
         </div>
 
@@ -144,7 +144,11 @@ export function ProjectsSection() {
                   >
                     {/* Image will be added here when available */}
                     <div className="h-full w-full flex items-center justify-center mask-cover">
-                      <img src={project.image} alt="" className="" />
+                      <img
+                        src={project.image}
+                        alt={project.title + " " + "image"}
+                        className=""
+                      />
                     </div>
                   </div>
 
