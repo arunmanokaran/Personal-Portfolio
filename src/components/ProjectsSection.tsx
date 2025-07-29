@@ -14,6 +14,8 @@ import { cn } from "@/lib/utils";
 import img2 from "../../public/assets/1724977285315.png";
 import img3 from "../../public/assets/1721936945316.jpg";
 import img1 from "../../public/assets/1708072225211.png";
+import img4 from "../../public/assets/digital transformation.webp";
+import img5 from "../../public/assets/portfolio1.jpg";
 
 // Project data
 const projects = [
@@ -70,13 +72,32 @@ const projects = [
     title: "Digital Transformation Portfolio",
     description:
       "The article discusses the digital divide between urban and rural areas, emphasizing the lack of access to technology and the internet in underserved regions, which hinders economic growth and education. It proposes solutions such as expanding broadband infrastructure, digital literacy programs, and the use of digital badges to empower individuals and bridge this gap, ultimately promoting social and economic equality.",
-    image: img3, // Placeholder - images will be replaced later
+    image: img4, // Placeholder - images will be replaced later
     tags: [
       "DigitalDivide",
       "TechnologyAccess",
       "BroadbandInfrastructure",
       "DigitalLiteracy",
       "A/BTesting"
+    ],
+    liveUrl:
+      "Analyze the below article and brief in 2 lines like I'm explaining it",
+    featured: true,
+  },
+
+  {
+    title: "Personal Portfolio",
+    description:
+      "The GitHub repository for the personal portfolio is built using Vite, TypeScript, React, and Tailwind CSS, providing a modern web development environment. It includes a structured file system with components for UI elements, a configuration setup for Tailwind and Vite, and scripts for managing dependencies and running the application. The project is designed to showcase personal projects and skills effectively.",
+    image: img5, // Placeholder - images will be replaced later
+    tags: [
+      "TypeScript",
+      "CSS",
+      "React",
+      "React DOM",
+      "Tailwind CSS",
+      "Shadcn-UI",
+      "Custom Hooks"
     ],
     liveUrl:
       "Analyze the below article and brief in 2 lines like I'm explaining it",
