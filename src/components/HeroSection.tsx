@@ -3,6 +3,7 @@ import { ArrowDownIcon, Github, Linkedin, Mail } from "lucide-react";
 import { useTheme } from "@/context/ThemeProvider";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import profile from "../../public/IMG_9202.jpg";
 
 export function HeroSection() {
   const { theme } = useTheme();
@@ -42,6 +43,12 @@ export function HeroSection() {
         )}
       </div>
 
+      <img
+        src={profile}
+        alt="profile picture"
+        className="h-60 m-8 rounded-full"
+      />
+
       {/* Content */}
       <div className="container mx-auto text-center relative z-10 space-y-6">
         <h2 className="text-lg md:text-xl font-medium text-primary animate-fade-in">
@@ -53,14 +60,15 @@ export function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto animate-fade-in-up delay-100">
-          Frontend Developer | Building Tomorrow's Web with JavaScript, React &
-          Node.js {"  @"}
+          Passionate about leveraging technology to create impactful solutions
+          in web development and AI | JavaScript, React & Node.js
+          {/* {"  @"}
           <a
             href="https://www.linkedin.com/in/arundotmano"
             className="underline"
           >
             arundotmano
-          </a>
+          </a> */}
         </p>
 
         {/* Social Links */}

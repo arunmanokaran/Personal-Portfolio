@@ -48,7 +48,9 @@ export function Header() {
             Dev Portfolio
           </a> */}
 
-          <img className="h-16 rounded-full" src="/IMG_9202.jpg" alt="" />
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+            Dev Portfolio
+          </h3>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
