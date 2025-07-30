@@ -20,7 +20,7 @@ export function HeroSection() {
     <section
       id="home"
       className={cn(
-        "min-h-screen flex flex-col justify-center items-center px-4 relative overflow-hidden",
+        "pt-20 min-h-screen flex flex-col justify-center items-center px-4 relative overflow-hidden",
         theme === "dark"
           ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950"
           : "bg-gradient-to-br from-blue-50 via-white to-blue-100"
@@ -51,13 +51,14 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="container mx-auto text-center relative z-10 space-y-6">
-        <h2 className="text-lg md:text-xl font-medium text-primary animate-fade-in">
-          Hello, I'm
-        </h2>
-
-        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent animate-fade-in-up">
-          Arun Manokaran
-        </h1>
+        <div>
+          <h2 className="text-lg md:text-xl font-medium text-primary animate-fade-in">
+            Hello, I'm
+          </h2>
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent animate-fade-in-up">
+            Arun Manokaran
+          </h1>
+        </div>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto animate-fade-in-up delay-100">
           Passionate about leveraging technology to create impactful solutions
@@ -116,10 +117,10 @@ export function HeroSection() {
         </div>
 
         {/* Scroll down indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="left-1/2 transform -translate-x-1/2 animate-bounce">
           <a
             href="#about"
-            className="flex flex-col items-center text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary"
+            className="text-gray-500 flex flex-col justify-end items-center -inset-x-1/2 dark:text-gray-400 hover:text-primary dark:hover:text-primary"
           >
             <span className="text-sm mb-2">Scroll Down</span>
             <ArrowDownIcon size={20} />

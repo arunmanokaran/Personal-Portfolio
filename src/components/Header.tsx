@@ -3,7 +3,6 @@ import { useTheme } from "@/context/ThemeProvider";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
-import profile from "public/IMG_9202.jpg";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -49,7 +48,7 @@ export function Header() {
           </a> */}
 
           <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-            Dev Portfolio
+            <a href="#home">Dev Portfolio</a>
           </h3>
 
           {/* Desktop Navigation */}
@@ -58,7 +57,7 @@ export function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors"
+                className="text-gray-700 dark:text-gray-200  hover:scale-110 transition-colors"
               >
                 {item.name}
               </a>
@@ -125,20 +124,40 @@ export function Header() {
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <nav className="md:hidden py-4 flex flex-col space-y-3">
+        <div
+          className={`md:hidden overflow-hidden backdrop-blur-2xl transition-all duration-300 ease-in-out ${
+            mobileMenuOpen
+              ? "max-h-[500px] translate-y-0 opacity-100"
+              : "max-h-0 -translate-y-5 opacity-0"
+          }`}
+        >
+          <nav className="py-4 flex flex-col items-center space-y-3">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors px-2 py-1.5 rounded-md"
+                className="text-gray-700 text-xl dark:text-gray-200 hover:text-primary active:scale-90 dark:hover:text-primary transition-colors px-2 py-1.5 rounded-md"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </a>
             ))}
           </nav>
-        )}
+        </div>
+        {/* {mobileMenuOpen && (
+          <nav className="md:hidden py-4 flex flex-col items-center backdrop-blur-2xl space-y-3">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-700 text-xl dark:text-gray-200 hover:text-primary active:scale-90 dark:hover:text-primary transition-colors px-2 py-1.5 rounded-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+        )} */}
       </div>
     </header>
   );
