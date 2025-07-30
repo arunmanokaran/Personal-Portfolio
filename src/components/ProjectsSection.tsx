@@ -11,11 +11,11 @@ import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
 import { useTheme } from "@/context/ThemeProvider";
 import { cn } from "@/lib/utils";
-import img2 from "../../public/assets/1724977285315.png";
-import img3 from "../../public/assets/1721936945316.jpg";
-import img1 from "../../public/assets/1708072225211.png";
-import img4 from "../../public/assets/digital transformation.webp";
-import img5 from "../../public/assets/portfolio1.jpg";
+import img2 from "../assets/1724977285315.png";
+import img3 from "../assets/1721936945316.jpg";
+import img1 from "../assets/1708072225211.png";
+import img4 from "../assets/digital transformation.webp";
+import img5 from "../assets/portfolio1.jpg";
 
 // Project data
 const projects = [

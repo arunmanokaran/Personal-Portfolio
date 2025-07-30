@@ -3,7 +3,7 @@ import { ArrowDownIcon, Github, Linkedin, Mail } from "lucide-react";
 import { useTheme } from "@/context/ThemeProvider";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
-import profile from "../../public/IMG_9202.jpg";
+import profile from "../assets/IMG_9202.jpg";
 
 export function HeroSection() {
   const { theme } = useTheme();
