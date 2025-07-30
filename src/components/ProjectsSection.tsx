@@ -99,8 +99,7 @@ const projects = [
       "Shadcn-UI",
       "Custom Hooks",
     ],
-    liveUrl:
-      "Analyze the below article and brief in 2 lines like I'm explaining it",
+    liveUrl: "https://github.com/arunmanokaran/Personal-Portfolio.git",
     featured: true,
   },
 ];
