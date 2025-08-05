@@ -27,7 +27,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   // Update the HTML class when theme changes
   useEffect(() => {
-    const root = window.document.documentElement;
+    const root = document.documentElement;
     
     // Remove the previous theme class and add the new one
     root.classList.remove('light', 'dark');

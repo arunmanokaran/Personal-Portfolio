@@ -125,11 +125,17 @@ export function Header() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden overflow-hidden backdrop-blur-2xl transition-all duration-300 ease-in-out ${
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
             mobileMenuOpen
-              ? "max-h-[500px] translate-y-0 opacity-100"
-              : "max-h-0 -translate-y-5 opacity-0"
-          }`}
+              ? "max-h-[100%] mx-[-16px] translate-y-0 opacity-100"
+              : "max-h-0 box-content translate-y-5 opacity-0"
+          }
+            ${
+              theme === "dark"
+                ? "bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950"
+                : "bg-gradient-to-br from-blue-50 via-white to-blue-100"
+            }
+          `}
         >
           <nav className="py-4 flex flex-col items-center space-y-3">
             {navItems.map((item) => (
