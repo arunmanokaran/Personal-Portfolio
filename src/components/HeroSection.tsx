@@ -47,6 +47,7 @@ export function HeroSection() {
         src={profile}
         alt="profile picture"
         className="h-60 m-8 rounded-full"
+        loading="lazy"
       />
 
       {/* Content */}
