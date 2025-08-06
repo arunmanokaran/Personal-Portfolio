@@ -64,13 +64,6 @@ export function HeroSection() {
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto animate-fade-in-up delay-100">
           Passionate about leveraging technology to create impactful solutions
           in web development and AI | JavaScript, React & Node.js
-          {/* {"  @"}
-          <a
-            href="https://www.linkedin.com/in/arundotmano"
-            className="underline"
-          >
-            arundotmano
-          </a> */}
         </p>
 
         {/* Social Links */}

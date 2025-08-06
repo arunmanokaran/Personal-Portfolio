@@ -42,10 +42,6 @@ export function Header() {
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          {/* <a href="#home" className="text-xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-            Dev Portfolio
-          </a> */}
 
           <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
             <a href="#home">Dev Portfolio</a>
@@ -150,20 +146,6 @@ export function Header() {
             ))}
           </nav>
         </div>
-        {/* {mobileMenuOpen && (
-          <nav className="md:hidden py-4 flex flex-col items-center backdrop-blur-2xl space-y-3">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 text-xl dark:text-gray-200 hover:text-primary active:scale-90 dark:hover:text-primary transition-colors px-2 py-1.5 rounded-md"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-        )} */}
       </div>
     </header>
   );

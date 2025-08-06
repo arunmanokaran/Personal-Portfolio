@@ -110,7 +110,10 @@ export function ProjectsSection() {
   const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section
+      id="projects"
+      className="py-20 px-4 bg-white dark:bg-gray-900 text-justify"
+    >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -184,56 +187,11 @@ export function ProjectsSection() {
                       <ExternalLink size={16} className="mr-1" /> Live Demo
                     </a>
                   </Button>
-                  {/* <Button asChild size="sm" variant="outline">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    <Github size={16} className="mr-1" /> Code
-                  </a>
-                </Button> */}
                 </CardFooter>
               </div>
             </Card>
           ))}
         </div>
-
-        {/* Other Projects */}
-        {/* <div className="mt-20">
-          <h3 className="text-2xl md:text-3xl font-bold mb-10 text-center">More Projects</h3>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {otherProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-md transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
-                  <div className="flex flex-wrap gap-1 pt-2">
-                    {project.tags.map((tag, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardHeader>
-                
-                <CardContent>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    {project.description}
-                  </p>
-                </CardContent>
-                
-                <CardFooter className="flex gap-3">
-                  <Button asChild size="sm" variant="ghost">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-xs">
-                      <ExternalLink size={14} className="mr-1" /> Demo
-                    </a>
-                  </Button>
-                  <Button asChild size="sm" variant="ghost">
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center text-xs">
-                      <Github size={14} className="mr-1" /> Code
-                    </a>
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div> */}
       </div>
     </section>
   );

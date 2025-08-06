@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900">
+    <section
+      id="about"
+      className="py-20 px-4 bg-white dark:bg-gray-900 text-justify"
+    >
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
@@ -102,26 +105,6 @@ export function AboutSection() {
               Experience & Education
             </h3>
             <div className="space-y-6">
-              {/* <Card>
-                <CardContent className="p-6 flex items-start">
-                  <div className="mr-4 p-2 bg-primary/10 rounded-full">
-                    <Briefcase size={24} className="text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg">
-                      Senior Front-end Developer
-                    </h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Tech Company • 2022 - Present
-                    </p>
-                    <p className="mt-2 text-gray-700 dark:text-gray-300">
-                      Leading front-end development for client projects,
-                      mentoring junior developers, and implementing modern web
-                      technologies.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card> */}
 
               <Card>
                 <CardContent className="p-6 flex items-start">
@@ -149,8 +132,7 @@ export function AboutSection() {
                       over 1,000 users enhanced security, while integrating
                       third-party APIs boosted functionality.
                       <br />
-                      <br />
-                      I also mentored junior developers, leading to a 20%
+                      <br />I also mentored junior developers, leading to a 20%
                       improvement in code quality and onboarding time. My role
                       included collaborating with UX/UI designers to create
                       user-friendly administrative pages and interactive
