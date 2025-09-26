@@ -14,10 +14,8 @@ import { cn } from "@/lib/utils";
 import img2 from "../assets/1724977285315.png";
 import img3 from "../assets/1721936945316.jpg";
 import img1 from "../assets/1708072225211.png";
-import img4 from "../assets/digital transformation.webp";
 import img5 from "../assets/portfolio1.jpg";
 
-// Project data
 const projects = [
   {
     title: "Evaluating the Integration of IT Solutions in Enhancing Customer",

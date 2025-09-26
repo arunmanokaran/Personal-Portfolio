@@ -9,8 +9,10 @@ export function AboutSection() {
       className="py-20 px-4 bg-white dark:bg-gray-900 text-justify"
     >
       <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+        <div className="mb-16">
+          <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">
+            About Me
+          </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Front-End Developer with 2.6 years of experience in building
@@ -105,7 +107,6 @@ export function AboutSection() {
               Experience & Education
             </h3>
             <div className="space-y-6">
-
               <Card>
                 <CardContent className="p-6 flex items-start">
                   <div className="mr-4 p-2 bg-primary/10 rounded-full">
