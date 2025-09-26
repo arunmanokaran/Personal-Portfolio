@@ -33,7 +33,7 @@ const projects = [
       "OperationalEfficiency",
     ],
     liveUrl:
-      "public/docs/EVALUATING+THE+INTEGRATION+OF+IT+SOLUTIONS+IN+ENHANCING+CUSTOMER+EXPERIENCE+AND+BUSINESS+GROWTH.pdf",
+      "/docs/EVALUATING+THE+INTEGRATION+OF+IT+SOLUTIONS+IN+ENHANCING+CUSTOMER+EXPERIENCE+AND+BUSINESS+GROWTH.pdf",
     //"https://drive.google.com/file/d/1TPJS1pdFG6rpMe8aEiIRFXqhTghvSjGv/view?usp=sharing",
     githubUrl: "https://github.com",
     featured: true,
