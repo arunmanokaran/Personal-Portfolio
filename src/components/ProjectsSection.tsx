@@ -33,7 +33,8 @@ const projects = [
       "OperationalEfficiency",
     ],
     liveUrl:
-      "https://drive.google.com/file/d/1TPJS1pdFG6rpMe8aEiIRFXqhTghvSjGv/view?usp=sharing",
+      "public/docs/EVALUATING+THE+INTEGRATION+OF+IT+SOLUTIONS+IN+ENHANCING+CUSTOMER+EXPERIENCE+AND+BUSINESS+GROWTH.pdf",
+    //"https://drive.google.com/file/d/1TPJS1pdFG6rpMe8aEiIRFXqhTghvSjGv/view?usp=sharing",
     githubUrl: "https://github.com",
     featured: true,
   },
@@ -68,22 +69,6 @@ const projects = [
       "https://www.linkedin.com/pulse/information-system-digital-transformation-arun-manokaran-teg7c",
     featured: true,
   },
-  {
-    title: "Digital Transformation Portfolio",
-    description:
-      "The article discusses the digital divide between urban and rural areas, emphasizing the lack of access to technology and the internet in underserved regions, which hinders economic growth and education. It proposes solutions such as expanding broadband infrastructure, digital literacy programs, and the use of digital badges to empower individuals and bridge this gap, ultimately promoting social and economic equality.",
-    image: img4, // Placeholder - images will be replaced later
-    tags: [
-      "DigitalDivide",
-      "TechnologyAccess",
-      "BroadbandInfrastructure",
-      "DigitalLiteracy",
-      "A/BTesting",
-    ],
-    liveUrl:
-      "Analyze the below article and brief in 2 lines like I'm explaining it",
-    featured: true,
-  },
 
   {
     title: "Personal Portfolio",
@@ -108,6 +93,10 @@ export function ProjectsSection() {
   const { theme } = useTheme();
   const featuredProjects = projects.filter((project) => project.featured);
   const otherProjects = projects.filter((project) => !project.featured);
+
+  const openDoc = (path: string) => {
+    window.open(path, "_blank");
+  };
 
   return (
     <section
@@ -177,15 +166,8 @@ export function ProjectsSection() {
                 </div>
 
                 <CardFooter className="flex gap-3">
-                  <Button asChild size="sm" variant="default">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center"
-                    >
-                      <ExternalLink size={16} className="mr-1" /> Live Demo
-                    </a>
+                  <Button onClick={() => openDoc(project.liveUrl)}>
+                    Read More
                   </Button>
                 </CardFooter>
               </div>
